@@ -1,0 +1,414 @@
+body {
+    font-family: "Manrope";
+    margin:0;
+}
+.header {
+    padding-top: 10px;
+    background: #E2E2EE;
+    color:#C69E5D;
+    text-align: right;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.content {
+
+}
+.sticky + .content {
+    padding-top: 250px;
+}
+.header h1 {
+    font-size: 7vw;
+    margin-right: 20px;
+   
+}
+.nav {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ul p";
+    align-items: center;
+    width: 100%;
+    line-height: .5;
+       
+}
+
+.header p {
+    font-size: 2vw;
+    text-align: right;
+    grid-area:p;
+    margin-right: 25px;
+   
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E2E2EE;
+    grid-area:ul;
+    margin-left: 50px;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: flex;
+    justify-content: space-between;
+    color: #C69E5D;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 2vw;
+    text-align: center;
+  }
+  
+li a:hover {
+    background-color: #FFFFFF;
+    color: #C69E5D;
+} 
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "about about1"
+    "work work1"
+    "contact contact1";
+    height:auto;
+
+}
+.about {
+    grid-area: about;
+    background-color:#263D23 ;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+    color: white;
+}
+img { 
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+      
+a:hover {
+    background-color: #263D23;
+    color:#C69E5D;
+}
+.next {
+    background-color: #E2E2EE;
+    color:#C69E5D;
+}
+  
+.round {
+    border-radius: 50%;
+}
+
+
+.about1 {
+    grid-area: about1;
+    background-color: #D3B7CC;
+    color: #101629;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    /* height: 300px; */
+}
+
+.work {
+    grid-area: work;
+    background-color: #D3B7CC;
+    color: #101629;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+}
+.work1 {
+    grid-area: work1;
+    background-color: #263D23;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+    color: white;
+}
+.contact {
+    grid-area: contact;
+    background-color: #263D23;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+    color:white; 
+}
+.contact1 {
+    grid-area: contact1;
+    background-color: #D3B7CC;
+    color: #101629;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 300px; */
+}
+
+/* About style */
+
+.heroImage{
+    background-color: #263D23;
+    width: 100%;
+    height: 30vh;
+    font-family: "Fredericka the Great";
+    color: #E2E2EE;
+    text-align: center;
+    font-size: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bodyContent {
+    background-color: #D3B7CC;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bodyText {
+    color: #101629;
+    text-align: center;
+    font-weight: lighter;
+    margin-left:150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+
+}
+
+.bodyText h3 {
+    font-size: 5vw;
+}
+.bodyText h4 {
+    font-size: 3vw;
+}
+.bodyText P {
+    font-size: 2vw;
+}
+
+/* work Style */
+
+.heroImageWork {
+    background-color: #D3B7CC;
+    width: 100%;
+    height: 30vh;
+    font-family: "Fredericka the Great";
+    color: #E2E2EE;
+    text-align: center;
+    font-size: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bodyContentWork {
+    background-color: #263D23;
+    width: 100%; 
+    display: grid;
+    color: white;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "nemaa nemaa1"
+    "project project1"
+    
+}
+.nemaa {
+    font-size: 3vw;
+    grid-area: nemaa;
+    margin: 10%;
+    text-align: relative;
+    
+
+}
+/* NEMAA image */
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 10%;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    right: 0;
+    background-color:#D3B7CC;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+  
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+  
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.text a {
+    color: white;
+}
+a:hover {
+    color: #D3B7CC;
+    background-color: white;
+}
+.nemaa1 {
+    grid-area: nemaa1;
+    font-size: 2vw;
+    margin: 10%;
+    text-align: right;
+}
+
+.project{ 
+    grid-area: project;
+    font-size: 2vw;
+    margin: 10%;
+    text-align: left;
+}
+.project1 {
+    grid-area: project1;
+    font-size: 2vw;
+    margin: 10%;
+    text-align: right;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color:#E2E2EE;
+    height: 150px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 40px;
+    text-decoration: none;
+    text-align: center;
+
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #263D23;
+  color: #D3B7CC;
+}
+.fa-linkedin {
+    background: #263D23;
+    color: #D3B7CC;
+    margin-left: 10px;
+}
+.fa-instagram {
+    background: #263D23;
+    color: #D3B7CC;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .bodyText {
+    margin-left:80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .heroImage {
+    height: 20vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .heroImageWork{
+    height: 20vh;
+    }
+}
+
+  
